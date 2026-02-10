@@ -10,7 +10,7 @@
 
 Fox CPU Rasterizer is a **C++ based rasterizer and runtime scene editor** built to explore how far a carefully optimized, multithreaded CPU renderer can go.
 
-This project intentionally avoids GPU raster pipelines. All stages geometry processing, rasterization, shading, animation, and post-processing—are executed entirely on the **CPU**  
+This project intentionally avoids GPU raster pipelines. All stages geometry processing, rasterization, shading, animation, and post-processing are executed entirely on the **CPU** witht same mech as the main pass to maintain consistency.
 (most of the development time around 70% was spent on optimization).
 
 It serves both as:
@@ -34,7 +34,7 @@ The animation, lighting (limited to directional light only, since I already inve
 
 ## Runtime Editing and Heavy CPU Rendering
 
-![Output 2 – Runtime Editing](outputs/output-2.gif)
+![Output 2 - Runtime Editing](outputs/output-2.gif)
 
 This output demonstrates:
 
