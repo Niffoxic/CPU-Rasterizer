@@ -70,7 +70,7 @@ executables should be in `assignment-release/Release`
 
 Fox CPU Rasterizer is a **C++ based rasterizer and runtime scene editor** built to explore how far a carefully optimized, multithreaded CPU renderer can go.
 
-This project intentionally avoids GPU raster pipelines. All stages geometry processing, rasterization, shading, animation, and post-processing—are executed entirely on the **CPU**  
+This project intentionally avoids GPU raster pipelines. All stages geometry processing, rasterization, shading, animation, and post-processing are executed entirely on the **CPU** witht same mech as the main pass to maintain consistency.
 (most of the development time around 70% was spent on optimization).
 
 It serves both as:
@@ -82,7 +82,7 @@ It serves both as:
 
 ## What is shown above (Output 1)
 
-- Screen-space ambient occlusion (SSAO) — only a test version, since doing an exhaustive one with static reflections on the CPU is expensive!
+- Screen-space (GOD Lights) - only a test version, since doing an exhaustive one with static reflections on the CPU is expensive!
 - Rain effects
 - Skeletal animation evaluated fully on the CPU
 - CPU post-processing pipeline
@@ -94,7 +94,7 @@ The animation, lighting (limited to directional light only, since I already inve
 
 ## Runtime Editing and Heavy CPU Rendering
 
-![Output 2 – Runtime Editing](outputs/output-2.gif)
+![Output 2 - Runtime Editing](outputs/output-2.gif)
 
 This output demonstrates:
 
@@ -142,7 +142,7 @@ The same runtime that renders the scene also supports **interactive editing** wi
 - Runtime animation control from the editor
 
 ### Post-Processing on the CPU
-- Screen-space reflections (SSR) — beta version only
+- Screen-space reflections (SSR)(simple version only - too costly for current arch)
 - Weather effects (rain)
 - Many smaller effects such as saturation, contrast, etc.
 - Entire post-processing pipeline executed on the CPU
