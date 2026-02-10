@@ -82,7 +82,7 @@ The same runtime that renders the scene also supports **interactive editing** wi
 - Runtime animation control from the editor
 
 ### Post-Processing on the CPU
-- Screen-space reflections (SSR) — beta version only
+- Screen-space reflections (SSR)(simple version only - too costly for current arch)
 - Weather effects (rain)
 - Many smaller effects such as saturation, contrast, etc.
 - Entire post-processing pipeline executed on the CPU
