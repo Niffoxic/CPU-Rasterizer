@@ -1,0 +1,215 @@
+{
+	"scene": {
+		"globals": {
+			"post_processing": {
+				"post_process": {
+					"exposure_enabled": "true",
+					"enabled": "true",
+					"exposure": "0.700000",
+					"contrast_enabled": "true",
+					"vignette_enabled": "true",
+					"contrast": "0.910000",
+					"saturation_enabled": "true",
+					"saturation": "2.000000",
+					"vignette_power": "1.400000",
+					"vignette_strength": "0.250000"
+				},
+				"rainy_effect": {
+					"depth_bias": "0.580000",
+					"enabled": "true",
+					"darken": "0.000000",
+					"intensity": "0.100000",
+					"streak_density": "0.010000",
+					"streak_length": "0.500000",
+					"streak_speed": "-2.780000",
+					"depth_weight": "0.730000",
+					"streak_probability": "0.220000",
+					"wind": "0.150000",
+					"tint": {
+						"b": "0.800000",
+						"r": "0.600000",
+						"g": "0.700000"
+					}
+				},
+				"advanced_effects": {
+					"bloom_intensity": "0.330000",
+					"enabled": "true",
+					"bloom_enabled": "true",
+					"bloom_threshold": "0.090000",
+					"film_grain_strength": "0.034000",
+					"film_grain_enabled": "false",
+					"film_grain_speed": "1.000000",
+					"motion_blur_enabled": "false",
+					"motion_blur_strength": "1.000000",
+					"fog_enabled": "false",
+					"fog_colour": {
+						"b": "0.800000",
+						"r": "0.650000",
+						"g": "0.700000"
+					},
+					"fog_start": "0.350000",
+					"fog_end": "0.950000",
+					"ssr_enabled": "false",
+					"ssr_strength": "0.160000",
+					"depth_of_field_enabled": "false",
+					"god_rays_enabled": "true",
+					"dof_focus": "1.000000",
+					"dof_range": "0.010000",
+					"god_rays_strength": "0.240000",
+					"god_rays_screen_pos": {
+						"x": "0.420000",
+						"y": "0.000000"
+					}
+				}
+			}
+		},
+		"version": "1",
+		"name": "scene",
+		"objects": {
+			"0": {
+				"id": "1",
+				"dynamic": {
+					"time_offset": "0.000000",
+					"anim_enabled": "true",
+					"anim_index": "0",
+					"anim_paused": "false",
+					"anim_time": "578.561218",
+					"playback_speed": "1.000000"
+				},
+				"name": "dragon",
+				"type": "dynamic_mesh",
+				"transform": {
+					"position": {
+						"x": "-61.099998",
+						"y": "15.600000",
+						"z": "-111.599998"
+					},
+					"rotation": {
+						"x": "-0.026180",
+						"y": "0.829031",
+						"z": "0.034907"
+					},
+					"scale": {
+						"x": "15.000000",
+						"y": "15.000000",
+						"z": "15.000000"
+					}
+				},
+				"asset": "assets/dynamic/dragon.glb",
+				"visible": "true"
+			},
+			"1": {
+				"id": "2",
+				"dynamic": {
+					"time_offset": "0.000000",
+					"anim_enabled": "true",
+					"anim_index": "13",
+					"anim_paused": "false",
+					"anim_time": "552.742310",
+					"playback_speed": "1.000000"
+				},
+				"name": "hero",
+				"type": "dynamic_mesh",
+				"transform": {
+					"position": {
+						"x": "-1.300000",
+						"y": "0.000000",
+						"z": "0.000000"
+					},
+					"rotation": {
+						"x": "0.000000",
+						"y": "0.000000",
+						"z": "0.000000"
+					},
+					"scale": {
+						"x": "1.000000",
+						"y": "1.000000",
+						"z": "1.000000"
+					}
+				},
+				"asset": "assets/dynamic/hero.glb",
+				"visible": "true"
+			},
+			"2": {
+				"id": "3",
+				"dynamic": {
+					"time_offset": "0.000000",
+					"anim_enabled": "true",
+					"anim_index": "2",
+					"anim_paused": "false",
+					"anim_time": "466.200226",
+					"playback_speed": "1.000000"
+				},
+				"name": "fox",
+				"type": "dynamic_mesh",
+				"transform": {
+					"position": {
+						"x": "-8.800000",
+						"y": "0.000000",
+						"z": "1.400000"
+					},
+					"rotation": {
+						"x": "0.000000",
+						"y": "1.692969",
+						"z": "0.000000"
+					},
+					"scale": {
+						"x": "1.000000",
+						"y": "1.000000",
+						"z": "1.000000"
+					}
+				},
+				"asset": "assets/dynamic/fox.glb",
+				"visible": "true"
+			},
+			"3": {
+				"id": "4",
+				"name": "fox",
+				"type": "static_mesh",
+				"transform": {
+					"position": {
+						"x": "-57.898636",
+						"y": "0.000000",
+						"z": "-134.054718"
+					},
+					"rotation": {
+						"x": "0.000000",
+						"y": "5.219997",
+						"z": "0.000000"
+					},
+					"scale": {
+						"x": "5.000000",
+						"y": "5.000000",
+						"z": "5.000000"
+					}
+				},
+				"asset": "assets/static/house_001.glb",
+				"visible": "true"
+			},
+			"4": {
+				"id": "5",
+				"name": "h3",
+				"type": "static_mesh",
+				"transform": {
+					"position": {
+						"x": "34.400002",
+						"y": "0.400000",
+						"z": "-149.300003"
+					},
+					"rotation": {
+						"x": "0.000000",
+						"y": "0.000000",
+						"z": "0.000000"
+					},
+					"scale": {
+						"x": "10.000000",
+						"y": "10.000000",
+						"z": "10.000000"
+					}
+				},
+				"asset": "assets/static/house_003.glb",
+				"visible": "true"
+			}
+		}
+	}
+}
