@@ -1,4 +1,4 @@
-![Output 1 – CPU Effects, Weather, Animation](outputs/output-1.gif)
+![Output 1 - CPU Effects, Weather, Animation](outputs/output-1.gif)
 
 > A high-performance **CPU-only real-time rasterizer** with animation, post-processing, and runtime scene editing.  
 > No GPU rasterization. No hardware shaders. Everything runs on the CPU  
@@ -8,27 +8,27 @@
 
 # Fox CPU Rasterizer
 
-Fox CPU Rasterizer is a **C++-based rasterizer and runtime scene editor** built to explore how far a carefully optimized, multithreaded CPU renderer can go.
+Fox CPU Rasterizer is a **C++ based rasterizer and runtime scene editor** built to explore how far a carefully optimized, multithreaded CPU renderer can go.
 
-This project intentionally avoids GPU raster pipelines. All major stages—geometry processing, rasterization, shading, animation, and post-processing—are executed entirely on the **CPU**  
-(most of the development time—around 70%—was spent on optimization).
+This project intentionally avoids GPU raster pipelines. All stages geometry processing, rasterization, shading, animation, and post-processing—are executed entirely on the **CPU**  
+(most of the development time around 70% was spent on optimization).
 
 It serves both as:
-- a **graphics rendering intuition and learning renderer, built the hard way**, and
-- a **runtime scene editor** with live interaction and serialization  
-  (PS: add audio before anything else).
+- a **graphics rendering intuition and learning renderer built the hard way**, and
+- a **runtime scene editor** with real time interaction and serialization  
+  (PS: add audio before anything ELSE!)
 
 ---
 
 ## What is shown above (Output 1)
 
-- Screen-space ambient occlusion (SSAO) — only a test version, since doing an exhaustive one with static reflections on the CPU is expensive
+- Screen-space ambient occlusion (SSAO) — only a test version, since doing an exhaustive one with static reflections on the CPU is expensive!
 - Rain effects
 - Skeletal animation evaluated fully on the CPU
 - CPU post-processing pipeline
 - Stable, deterministic rendering
 
-The animation, lighting (limited to directional light only, since I already invested significant time in lighting in my previous project and avoided it here due to time constraints), and post effects you see are not previews or offline renders — they are produced in real time on the CPU.
+The animation, lighting (limited to directional light only, since I already invested significant time in lighting in my previous project and avoided it here due to time constraints), and post effects you see are not previews or offline renders! - they are produced in real time on the CPU!!.
 
 ---
 
@@ -44,7 +44,7 @@ This output demonstrates:
 - Heavy rendering workloads handled entirely by the CPU  
   (the map contains millions of triangles rendered on the CPU)
 
-The same runtime that renders the scene also supports **interactive editing**, without switching modes or using a separate editor.
+The same runtime that renders the scene also supports **interactive editing** without switching modes or using a separate editor.
 
 ---
 
