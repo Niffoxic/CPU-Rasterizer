@@ -6,6 +6,66 @@
 
 ---
 
+## Build Instructions
+
+> **Generator:** Visual Studio 17 2022  
+> **Platform:** x64  
+> **CMake:** Multi-config (Release / RelWithDebInfo)
+
+---
+
+### Assignment Build Instructions  
+*(run from the repository root)*
+
+#### RelWithDebInfo (benchmark testing)
+```powershell
+cmake -S assignment -B assignment-relwithdebinfo -G "Visual Studio 17 2022" -A x64 -DCMAKE_CONFIGURATION_TYPES="Release;RelWithDebInfo" -DCMAKE_BUILD_TYPE=""
+
+(next)
+
+cmake --build assignment-relwithdebinfo --config RelWithDebInfo
+```
+
+executables should be in `assignment-relwithdebinfo/RelWithDebInfo`
+
+#### Release (no debug info)
+```powershell
+cmake -S assignment -B assignment-release -G "Visual Studio 17 2022" -A x64 -DCMAKE_CONFIGURATION_TYPES="Release;RelWithDebInfo" -DCMAKE_BUILD_TYPE=""
+
+(next)
+
+cmake --build assignment-release --config Release
+```
+executables should be in `assignment-release/Release`
+
+---
+
+### Custom Scene Build Instructions  
+*(run from the repository root)*
+
+#### RelWithDebInfo
+```powershell
+cmake -S . -B build-relwithdebinfo -G "Visual Studio 17 2022" -A x64 -DCMAKE_CONFIGURATION_TYPES="Release;RelWithDebInfo" -DCMAKE_BUILD_TYPE=""
+
+(next)
+
+cmake --build build-relwithdebinfo --config RelWithDebInfo
+```
+executables should be in `assignment-relwithdebinfo/RelWithDebInfo`
+
+#### Release
+```powershell
+cmake -S . -B build-release -G "Visual Studio 17 2022" -A x64 -DCMAKE_CONFIGURATION_TYPES="Release;RelWithDebInfo" -DCMAKE_BUILD_TYPE=""
+
+(next)
+
+cmake --build build-release --config Release
+```
+executables should be in `assignment-release/Release`
+
+---
+
+
 # Fox CPU Rasterizer
 
 Fox CPU Rasterizer is a **C++ based rasterizer and runtime scene editor** built to explore how far a carefully optimized, multithreaded CPU renderer can go.

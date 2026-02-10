@@ -182,6 +182,17 @@ add_custom_command(TARGET rasterizer POST_BUILD
 set(FOX_ASSETS_SRC "${CMAKE_SOURCE_DIR}/assets")
 set(FOX_ASSETS_DST "$<TARGET_FILE_DIR:rasterizer>/assets")
 
+set(FOX_SCENE_SRC "${CMAKE_SOURCE_DIR}/scene.json")
+set(FOX_SCENE_DST "$<TARGET_FILE_DIR:rasterizer>/scene.json")
+
+add_custom_command(TARGET rasterizer POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${FOX_SCENE_SRC}"
+        "${FOX_SCENE_DST}"
+        VERBATIM
+)
+
+
 add_custom_command(TARGET rasterizer POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E make_directory "${FOX_ASSETS_DST}"
         COMMAND ${CMAKE_COMMAND} -E copy_directory "${FOX_ASSETS_SRC}" "${FOX_ASSETS_DST}"
@@ -193,3 +204,15 @@ message(STATUS "MSVC SIMD: FOX_SIMD_LEVEL=${FOX_SIMD_LEVEL}")
 message(STATUS "FOX_FAST_MATH=${FOX_FAST_MATH}")
 message(STATUS "TRACER=${TRACER}")
 message(STATUS "EDIT_MODE=${EDIT_MODE}")
+
+
+
+
+
+
+
+
+
+
+
+
