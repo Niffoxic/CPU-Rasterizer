@@ -22,7 +22,7 @@ It serves both as:
 
 ## What is shown above (Output 1)
 
-- Screen-space ambient occlusion (SSAO) — only a test version, since doing an exhaustive one with static reflections on the CPU is expensive!
+- Screen-space (GOD Lights) - only a test version, since doing an exhaustive one with static reflections on the CPU is expensive!
 - Rain effects
 - Skeletal animation evaluated fully on the CPU
 - CPU post-processing pipeline
